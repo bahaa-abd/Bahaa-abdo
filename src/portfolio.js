@@ -162,7 +162,7 @@ const bigProjects = {
       footerLink: [
         {
           name: "Visit Website",
-          url: "https://biogram.onrender.com/"
+          url: "https://chatapp-production-5678.up.railway.app/"
         }
         //  you can add extra buttons here.
       ]
