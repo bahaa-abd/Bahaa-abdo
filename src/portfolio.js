@@ -168,6 +168,18 @@ const bigProjects = {
       ]
     },
     {
+      image: require("./assets/images/ubay.ico"),
+      projectName: "Ubay",
+      projectDesc:
+        "dynamic and user-friendly social media platform designed for the purpose of buying and selling second-hand items",
+      footerLink: [
+        {
+          name: "Visit Website",
+          url: "https://u-bay.vercel.app"
+        }
+      ]
+    },
+    {
       image: require("./assets/images/logo-green.png"),
       projectName: "Natours",
       projectDesc: "Site for booking tours",
