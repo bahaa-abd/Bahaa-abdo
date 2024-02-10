@@ -34,8 +34,11 @@ const greeting = {
 
 const socialMediaLinks = {
   github: "https://github.com/bahaa-alden",
+  gitlab: "https://gitlab.com/samerabood195",
+  instagram: "https://www.instagram.com/ich_bin_bahaa",
   gmail: "samerabood195@gmail.com",
   facebook: "https://www.facebook.com/profile.php?id=100011475199047",
+  linkedin: "https://www.linkedin.com/in/bahaa-alden-abdo-622075252/",
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
   display: true // Set true to display this section, defaults to false
