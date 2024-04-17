@@ -115,7 +115,7 @@ const educationInfo = {
       schoolName: "Aleppo University",
       logo: require("./assets/images/AleppoUn.png"),
       subHeader: "IT Engineering",
-      desc: "4th year",
+      desc: "5th year",
       duration: "September 2019 - now"
     }
   ]
@@ -143,7 +143,18 @@ const techStack = {
 };
 
 // Work experience section
-
+export const workExperiences = {
+  experience: [
+    {
+      company: "Damatag",
+      desc: "Damatag is a registered Turkish company, headquartered in Istanbul, working as Internet software developers and consultants",
+      date: "20-12-2024",
+      companylogo: require("./assets/images/damatag.jpg"),
+      role: "Backend Developer"
+    }
+  ],
+  display: true
+};
 /* Your Open Source Section to View Your Github Pinned Projects
 To know how to get github key look at readme.md */
 
@@ -207,7 +218,7 @@ const contactInfo = {
 
 // Twitter Section
 
-const isHireable = true; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
+const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
 
 export {
   illustration,
