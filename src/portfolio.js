@@ -148,7 +148,7 @@ export const workExperiences = {
     {
       company: "Damatag",
       desc: "Damatag is a registered Turkish company, headquartered in Istanbul, working as Internet software developers and consultants",
-      date: "20-12-2024",
+      date: "20-03-2024",
       companylogo: require("./assets/images/damatag.jpg"),
       role: "Backend Developer"
     }
