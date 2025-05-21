@@ -1,7 +1,7 @@
 import React from "react";
 import "./SoftwareSkill.scss";
 import {skillsSection} from "../../portfolio";
-import {SiNestjs, SiExpress} from "react-icons/si";
+import {SiNestjs, SiExpress, SiMui} from "react-icons/si";
 
 export default function SoftwareSkill() {
   return (
@@ -32,6 +32,12 @@ export default function SoftwareSkill() {
               </li>
             );
           })}
+          <li className="software-skill-inline">
+            <i>
+              <SiMui />
+            </i>
+            <p>Mui</p>
+          </li>
         </ul>
       </div>
     </div>

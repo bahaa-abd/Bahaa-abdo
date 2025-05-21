@@ -26,7 +26,7 @@ const greeting = {
     "A passionate Backend  Developer 🚀 having an experience of building Web applications with  NestJs / Nodejs / ExpressJs / TypeScript / JavaScript some other cool libraries and frameworks and have some FrontEnd experience using ReactJs."
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1LpaY777vm5ZpYkWf-FNcCyL7UqR-iJVg/view?usp=sharing", // Set to empty to hide the button
+    "https://drive.google.com/file/d/1q1Jum4V_vO6SaObwF8N8ALpEPhjXjTB4/view?usp=sharing", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -34,9 +34,9 @@ const greeting = {
 
 const socialMediaLinks = {
   github: "https://github.com/bahaa-alden",
-  gitlab: "https://gitlab.com/samerabood195",
+  gitlab: "https://gitlab.com/bahaa-alden",
   instagram: "https://www.instagram.com/ich_bin_bahaa",
-  gmail: "samerabood195@gmail.com",
+  gmail: "bahaaaldenabdo@gmail.com",
   facebook: "https://www.facebook.com/profile.php?id=100011475199047",
   linkedin: "https://www.linkedin.com/in/bahaa-alden-abdo-622075252/",
   // Instagram, Twitter and Kaggle are also supported in the links!
@@ -115,8 +115,8 @@ const educationInfo = {
       schoolName: "Aleppo University",
       logo: require("./assets/images/AleppoUn.png"),
       subHeader: "IT Engineering",
-      desc: "5th year",
-      duration: "September 2019 - now"
+      desc: "Graduated form IT Engineering Faculty at Aleppo University with a GPA 78.5%",
+      duration: "September 2019 - September 2024"
     }
   ]
 };
@@ -128,15 +128,15 @@ const techStack = {
   experience: [
     {
       Stack: "Backend",
-      progressPercentage: "75%"
+      progressPercentage: "90%"
     },
     {
       Stack: "Frontend/Design", //Insert stack or technology you have experience in
-      progressPercentage: "50%" //Insert relative proficiency in percentage
+      progressPercentage: "70%" //Insert relative proficiency in percentage
     },
     {
       Stack: "Programming",
-      progressPercentage: "70%"
+      progressPercentage: "80%"
     }
   ],
   displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
@@ -148,7 +148,7 @@ export const workExperiences = {
     {
       company: "Damatag",
       desc: "Damatag is a registered Turkish company, headquartered in Istanbul, working as Internet software developers and consultants",
-      date: "20-03-2024",
+      date: "20-03-2024 -> 15-03-2025",
       companylogo: require("./assets/images/damatag.jpg"),
       role: "Backend Developer"
     }
@@ -203,6 +203,32 @@ const bigProjects = {
           url: "https://natoursita.onrender.com/"
         }
       ]
+    },
+    {
+      image: require("./assets/images/ubay.ico"),
+      projectName: "BaHub",
+      projectDesc:
+        "Managing your study café with automated cost calculation features.",
+      footerLink: [
+        {
+          name: "Visit Website",
+          url: "https://ba-hub-app-o5c4.vercel.app"
+        }
+        //  you can add extra buttons here.
+      ]
+    },
+    {
+      image: require("./assets/images/naqla.png"),
+      projectName: "Naqla",
+      projectDesc:
+        "Naqla is a platform designed to simplify the process of moving house furniture and goods. Inspired by the convenience of ride-sharing apps, Naqla connects users with reliable truck drivers for a seamless, stress-free moving experience.",
+      footerLink: [
+        {
+          name: "Visit Website",
+          url: "https://github.com/I-AM-22/naqla"
+        }
+        //  you can add extra buttons here.
+      ]
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -213,7 +239,7 @@ const contactInfo = {
   subtitle:
     "Discuss a project or just want to say hi? My Inbox is open for all.",
   number: "+963950513746",
-  email_address: "samerabood195@gmail.com"
+  email_address: "bahaaaldenabdo@gmail.com"
 };
 
 // Twitter Section
