@@ -2,6 +2,16 @@
 
 .dark-mode {
   background-color: $darkBackground;
+  background-image:
+    linear-gradient(rgba(56, 189, 248, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(56, 189, 248, 0.04) 1px, transparent 1px),
+    radial-gradient(circle at 20% 10%, rgba(34, 197, 94, 0.08), transparent 28rem),
+    radial-gradient(circle at 85% 30%, rgba(56, 189, 248, 0.08), transparent 24rem);
+  background-size:
+    42px 42px,
+    42px 42px,
+    auto,
+    auto;
   color: white;
   transition: "0.1s";
 }

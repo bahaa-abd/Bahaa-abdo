@@ -20,13 +20,13 @@ const illustration = {
 };
 
 const greeting = {
-  username: "Bahaa Alden Abdo",
+  username: "Bahaa Eddin Abdo",
   title: "Hi all, I'm Bahaa",
   subTitle: emoji(
     "A passionate Backend  Developer 🚀 having an experience of building Web applications with  NestJs / Nodejs / ExpressJs / TypeScript / JavaScript some other cool libraries and frameworks and have some FrontEnd experience using ReactJs."
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1q1Jum4V_vO6SaObwF8N8ALpEPhjXjTB4/view?usp=sharing", // Set to empty to hide the button
+    "https://drive.google.com/file/d/13jTADVwaqD-P-FgKeIK4s6hjvqU8ARya/view?usp=sharing", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -35,8 +35,8 @@ const greeting = {
 const socialMediaLinks = {
   github: "https://github.com/bahaa-alden",
   gitlab: "https://gitlab.com/bahaa-alden",
-  instagram: "https://www.instagram.com/ich_bin_bahaa",
-  gmail: "bahaaaldenabdo@gmail.com",
+  instagram: "https://www.instagram.com/bahaa_eddin_2001",
+  gmail: "bahaaeddinabdo@gmail.com",
   facebook: "https://www.facebook.com/profile.php?id=100011475199047",
   linkedin: "https://www.linkedin.com/in/bahaa-alden-abdo-622075252/",
   // Instagram, Twitter and Kaggle are also supported in the links!
@@ -48,10 +48,14 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I do",
-  subTitle: "CRAZY BACKEND DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+  subTitle: "BACKEND DEVELOPER WITH STRONG API, ARCHITECTURE, AND AUTOMATION EXPERIENCE",
   skills: [
-    emoji("⚡ Develop highly APIs for your web and mobile applications"),
-    emoji("⚡ Know how to deal with Sql like postgres and noSql like MongoDB ")
+    emoji("⚡ JavaScript, TypeScript, Node.js, NestJS, and REST API architecture"),
+    emoji("⚡ MongoDB, PostgreSQL, Mongoose, TypeORM, and Prisma"),
+    emoji("⚡ Microservices, Domain-Driven Design (DDD), Socket.io, and real-time systems"),
+    emoji("⚡ Git workflows, Docker, Jira, Trello, and team collaboration"),
+    emoji("⚡ Automation scripts with Bash, PowerShell, and Node.js"),
+    emoji("⚡ React.js, Next.js, CSS, Sass, Material UI, ShadCN, Stripe, and HyperPay")
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
@@ -146,6 +150,14 @@ const techStack = {
 export const workExperiences = {
   experience: [
     {
+      company: "Kaiali Group",
+      companyUrl: "https://kaiali.net/",
+      desc: "A scalable SaaS-based digital services platform offering social media, gaming, subscriptions, and digital payment solutions.",
+      date: "10-2025 -> 06-2026",
+      companylogo: require("./assets/images/kaiali.png"),
+      role: "Backend Developer"
+    },
+    {
       company: "Damatag",
       desc: "Damatag is a registered Turkish company, headquartered in Istanbul, working as Internet software developers and consultants",
       date: "20-03-2024 -> 15-03-2025",
@@ -170,64 +182,74 @@ const bigProjects = {
   subtitle: "My Nodejs Projects",
   projects: [
     {
-      image: require("./assets/images/BioGRAM.png"),
-      projectName: "BioGram",
-      projectDesc: "Chat and find new friends ",
-      footerLink: [
-        {
-          name: "Visit Website",
-          url: "https://biogram.onrender.com/"
-        }
-        //  you can add extra buttons here.
-      ]
-    },
-    {
-      image: require("./assets/images/ubay.ico"),
-      projectName: "Ubay",
+      image: require("./assets/images/live-gold.webp"),
+      projectName: "LiveGold",
       projectDesc:
-        "dynamic and user-friendly social media platform designed for the purpose of buying and selling second-hand items",
+        "The first application in Saudi Arabia for tracking gold prices 24/7, providing precise and real-time updates on local and global markets, helping store owners and investors make accurate decisions.",
+      technologies: ["Node.js", "Koa.js", "TypeScript", "MongoDB"],
       footerLink: [
         {
           name: "Visit Website",
-          url: "https://u-bay.vercel.app"
+          url: "https://livegold.sa/"
         }
       ]
     },
     {
-      image: require("./assets/images/logo-green.png"),
-      projectName: "Natours",
-      projectDesc: "Site for booking tours",
-      footerLink: [
-        {
-          name: "Visit Website",
-          url: "https://natoursita.onrender.com/"
-        }
-      ]
-    },
-    {
-      image: require("./assets/images/ubay.ico"),
-      projectName: "BaHub",
+      image: require("./assets/images/saleh-cars.jpeg"),
+      projectName: "Saleh Cars",
       projectDesc:
-        "Managing your study café with automated cost calculation features.",
+        "Saleh Group for Cars, established in 1995, has grown into one of the largest authorized car distributors in Saudi Arabia, representing over 45 major brands and serving both government and private sectors.",
+      technologies: ["Node.js", "Koa.js", "TypeScript", "MongoDB"],
       footerLink: [
         {
           name: "Visit Website",
-          url: "https://ba-hub-app-o5c4.vercel.app"
+          url: "https://www.salehcars.com/"
         }
-        //  you can add extra buttons here.
       ]
     },
     {
-      image: require("./assets/images/naqla.png"),
-      projectName: "Naqla",
+      image: require("./assets/images/ghaya-logo-final-05.png"),
+      projectName: "Ghaya Express",
       projectDesc:
-        "Naqla is a platform designed to simplify the process of moving house furniture and goods. Inspired by the convenience of ride-sharing apps, Naqla connects users with reliable truck drivers for a seamless, stress-free moving experience.",
+        "A logistics platform providing reliable and efficient shipping solutions for businesses to manage orders securely and effectively.",
+      technologies: ["Node.js", "Koa.js", "TypeScript", "MongoDB"],
       footerLink: [
         {
           name: "Visit Website",
-          url: "https://github.com/I-AM-22/naqla"
+          url: "https://ghayaex.com"
         }
-        //  you can add extra buttons here.
+      ]
+    },
+    {
+      image: require("./assets/images/cognit.webp"),
+      projectName: "Cognit Hub",
+      projectDesc:
+        "A platform designed for training organizations offering Continuing Professional Education (CPE), enabling seamless management of content, registration, and certification processes.",
+      technologies: ["Node.js", "Koa.js", "TypeScript", "MongoDB"],
+      footerLink: [
+        {
+          name: "Visit Website",
+          url: "https://cognithub.com/"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/kaiali.png"),
+      projectName: "Kaiali Games",
+      projectDesc:
+        "A scalable SaaS-based digital services platform offering social media, gaming, subscriptions, and digital payment solutions. I played a key role in designing and developing a modular and maintainable system.",
+      technologies: [
+        "NestJS",
+        "TypeScript",
+        "MongoDB",
+        "Nx Monorepo",
+        "React.js"
+      ],
+      footerLink: [
+        {
+          name: "Visit Website",
+          url: "https://kaiali.net/"
+        }
       ]
     }
   ],
@@ -239,12 +261,12 @@ const contactInfo = {
   subtitle:
     "Discuss a project or just want to say hi? My Inbox is open for all.",
   number: "+963950513746",
-  email_address: "bahaaaldenabdo@gmail.com"
+  email_address: "bahaaeddinabdo@gmail.com"
 };
 
 // Twitter Section
 
-const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
+const isHireable = true; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
 
 export {
   illustration,

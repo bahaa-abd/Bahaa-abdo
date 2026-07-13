@@ -1,7 +1,7 @@
 @import "../../_globalColor";
 
 .main-button {
-  background-color: $buttonColor;
+  background: linear-gradient(135deg, #0ea5e9, $buttonHover);
   border: solid 1px $buttonColor;
   color: $textColorDark;
   font-weight: 700;
@@ -10,6 +10,9 @@
   margin-right: 50px;
   text-transform: uppercase;
   border-radius: 6px;
+  box-shadow: 0 14px 28px rgba(37, 99, 235, 0.22);
+  font-family: "Courier New", monospace;
+  letter-spacing: 0;
   text-align: center;
   text-decoration: none;
   display: block;
@@ -19,10 +22,11 @@
   transition: all 0.3s ease-in-out 0s;
 }
 .main-button:hover {
-  background-color: $darkBoxShadow2;
+  background: #020617;
   color: $buttonColor;
   transition: all 0.3s ease 0s;
-  transform: translateY(-3px);
+  transform: translateY(-4px);
+  box-shadow: 0 18px 32px rgba(20, 184, 166, 0.18);
 }
 .project-button {
   display: flex;

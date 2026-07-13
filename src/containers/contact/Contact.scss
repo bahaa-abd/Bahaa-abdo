@@ -1,7 +1,9 @@
 @import "../../_globalColor";
 
 .contact-div-main {
+  align-items: center;
   display: flex;
+  gap: 3rem;
 }
 
 .dark-mode a {
@@ -14,23 +16,38 @@
 
 .contact-title {
   font-size: 65px;
-  font-weight: 400;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+.contact-title::before {
+  color: $buttonHover;
+  content: "$ git push origin contact";
+  display: block;
+  font-family: "Courier New", monospace;
+  font-size: 0.28em;
+  margin-bottom: 0.5rem;
 }
 
 .contact-detail,
 .contact-detail-email {
   margin-top: 20px;
-  font-size: 40px;
+  font-size: 34px;
   font-weight: 400;
   color: $subTitle;
   text-decoration: none;
+  display: inline-block;
+  font-family: "Courier New", monospace;
+  transition:
+    color 0.25s ease,
+    transform 0.25s ease;
 }
 
 .contact-detail:hover,
 .contact-detail-email:hover {
-  color: $textColor;
-  text-shadow: 2px 1px 2px $contactDetailHoverTS;
-  transition: all 0.3s;
+  color: $buttonColor;
+  text-shadow: none;
+  transform: translateX(4px);
 }
 
 .contact-subtitle {
@@ -50,6 +67,7 @@
   height: auto;
   margin-left: 1.5rem;
   margin-top: -4rem;
+  filter: drop-shadow(0 24px 42px rgba(15, 23, 42, 0.14));
 }
 
 /* Media Query */

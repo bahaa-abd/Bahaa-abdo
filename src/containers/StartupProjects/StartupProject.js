@@ -43,15 +43,20 @@ export default function StartupProject() {
                       : "project-card project-card-light"
                   }
                 >
-                  {project.image ? (
-                    <div className="project-image">
+                  <div className="project-image">
+                    {project.image ? (
                       <img
                         src={project.image}
                         alt={project.projectName}
                         className="card-image"
-                      ></img>
-                    </div>
-                  ) : null}
+                      />
+                    ) : (
+                      <div className="project-terminal-preview">
+                        <span>$ npm run start</span>
+                        <span>{project.projectName.toLowerCase()}</span>
+                      </div>
+                    )}
+                  </div>
                   <div className="project-detail">
                     <h5
                       className={isDark ? "dark-mode card-title" : "card-title"}
@@ -65,6 +70,35 @@ export default function StartupProject() {
                     >
                       {project.projectDesc}
                     </p>
+                    {project.technologies ? (
+                      <div className="project-tech-stack">
+                        {project.technologies.map((technology, i) => {
+                          return (
+                            <span
+                              key={i}
+                              className={
+                                isDark ? "dark-mode tech-tag" : "tech-tag"
+                              }
+                            >
+                              {technology}
+                            </span>
+                          );
+                        })}
+                      </div>
+                    ) : null}
+                    {project.keyContributions ? (
+                      <ul
+                        className={
+                          isDark
+                            ? "dark-mode project-contributions"
+                            : "project-contributions"
+                        }
+                      >
+                        {project.keyContributions.map((contribution, i) => {
+                          return <li key={i}>{contribution}</li>;
+                        })}
+                      </ul>
+                    ) : null}
                     {project.footerLink ? (
                       <div className="project-card-footer">
                         {project.footerLink.map((link, i) => {

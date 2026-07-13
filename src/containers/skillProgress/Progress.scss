@@ -1,9 +1,9 @@
 @import "../../_globalColor";
 
 .meter {
-  height: 20px;
+  height: 14px;
   position: relative;
-  background: $progressBarBackground;
+  background: rgba(148, 163, 184, 0.16);
   -moz-border-radius: 25px;
   -webkit-border-radius: 25px;
   border-radius: 25px;
@@ -15,12 +15,13 @@
   border-bottom-right-radius: 6px;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
-  background-color: $progressBarSpanBG;
+  background: linear-gradient(90deg, $buttonColor, $buttonHover);
   position: relative;
   overflow: hidden;
 }
 .skill {
   line-height: 3.5vw;
+  font-family: "Courier New", monospace;
 }
 .skill-bars {
   font-size: 28px;
@@ -28,10 +29,19 @@
 }
 .skills-container {
   display: flex;
-  width: 90%;
-  padding: 20px 10px;
+  width: min(90%, 1180px);
+  padding: 32px 10px;
   margin: 0px auto;
   margin-top: 2rem;
+}
+
+.skills-bar .skills-heading::before {
+  color: $buttonHover;
+  content: "$ chmod +x proficiency.sh";
+  display: block;
+  font-family: "Courier New", monospace;
+  font-size: 0.28em;
+  margin-bottom: 0.5rem;
 }
 .skills-container > * {
   flex: 1;

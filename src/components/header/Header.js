@@ -1,10 +1,9 @@
-import React, {useContext} from "react";
+import React, {useContext, useEffect, useState} from "react";
 import Headroom from "react-headroom";
 import "./Header.scss";
 import ToggleSwitch from "../ToggleSwitch/ToggleSwitch";
 import StyleContext from "../../contexts/StyleContext";
 import {
-  greeting,
   skillsSection,
   openSource,
   bigProjects,
@@ -13,18 +12,26 @@ import {
 
 function Header() {
   const {isDark} = useContext(StyleContext);
+  const [isLogoBooting, setIsLogoBooting] = useState(true);
   const viewOpenSource = openSource.display;
   const viewSkills = skillsSection.display;
   const viewBigPro = bigProjects.display;
   const viewEducation = educationInfo.display;
 
+  useEffect(() => {
+    const logoTimer = setTimeout(() => setIsLogoBooting(false), 1600);
+    return () => clearTimeout(logoTimer);
+  }, []);
+
   return (
     <Headroom>
       <header className={isDark ? "dark-menu header" : "header"}>
         <a href="/" className="logo">
-          <span className="grey-color"> &lt;</span>
-          <span className="logo-name">{greeting.username}</span>
-          <span className="grey-color">/&gt;</span>
+          <span className="logo-prompt">$</span>
+          <span className={isLogoBooting ? "logo-name logo-command" : "logo-name"}>
+            {isLogoBooting ? "cat name" : "Bahaa Eddin Abdo"}
+          </span>
+          <span className="logo-cursor"></span>
         </a>
         <input className="menu-btn" type="checkbox" id="menu-btn" />
         <label

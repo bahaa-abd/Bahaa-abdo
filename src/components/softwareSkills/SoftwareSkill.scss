@@ -3,7 +3,7 @@
 .dev-icons {
   padding-left: 0;
   list-style: none;
-  font-size: 3rem;
+  font-size: 2.4rem;
   margin-bottom: 0px;
   margin-top: 0px;
   text-align: center;
@@ -11,21 +11,39 @@
 
 .software-skill-inline {
   display: inline-block;
-  margin-right: 20px;
-  margin-bottom: 20px;
+  margin: 0 7px 12px;
+  min-width: 68px;
+  padding: 10px 11px;
+  border: 1px solid $lightBorder1;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.05);
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    transform 0.2s ease;
 }
 
 .software-skill-inline > i {
-  color: $subTitle;
+  color: rgba(148, 163, 184, 0.86);
+  transition: color 0.2s ease;
 }
 
-.software-skill-inline > i:hover {
+.software-skill-inline:hover {
+  border-color: rgba(20, 184, 166, 0.34);
+  box-shadow: 0 16px 28px rgba(15, 23, 42, 0.1);
+  transform: translateY(-4px);
+}
+
+.software-skill-inline:hover > i {
   color: $skillsColor;
 }
 .software-skill-inline > p {
-  color: $subTitle;
-  font-size: 10px;
+  color: rgba(148, 163, 184, 0.86);
+  font-size: 9px;
+  margin-bottom: 0;
+  transition: color 0.2s ease;
 }
-.software-skill-inline > i:hover ~ p {
+.software-skill-inline:hover > p {
   color: $skillsColor;
 }
